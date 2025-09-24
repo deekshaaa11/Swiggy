@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title> Swiggy</title>
+        <style>
+
+            .swiggy {
+                display: flex;
+                flex-direction: left;
+                height: 40px;
+            }
+            .food1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+            background-color: rgb(252, 231, 195);
+            border: 1px solid white;
+            
+            }
+
+            header {
+            background: #ea7211;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 0%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: right;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        .food1 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+         .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: row;
+            gap: 40px;
+            
+        }
+
+        .card {
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            overflow: hidden;
+            gap: 30px;
+            
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            
+           
+        }
+
+
+        .card p {
+            font-size: 13px;
+            padding: 0 10px 15px;
+            color: #666;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+            text-align: center;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+           
+        }
+
+        
+         nav ul li.ull {
+            display: flex;
+            list-style: none;
+            justify-content:center;
+            margin-left: 10px;
+            padding: 0px;
+            text-align: center;
+            
+        }
+
+        @media (max-width: 600px){
+            .food1{
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li.list{
+                margin:10px 0;
+                display: flex;
+                text-align: center;
+            
+            }
+        }
+
+         @media (max-width: 1000px){
+            .food1{
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li.list{
+                margin:10px 0;
+                display: flex;
+                text-align: center;
+            
+            }
+        }
+        
+
+        
+
+        </style>
+    </head>
+    <body>
+        <div>
+        <header>
+            <nav>
+                <ul>
+                    <li> Home </li>
+                    <li> Menu</li>
+                    <li> Contact</li>
+                </ul>
+                <div class="swiggy">
+                    <img src="swiggy.png" >
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="food1"> 
+        <div>
+        <h2> Delicious Food, Delivered Fast🍕🍕</h2>
+        <p> Order your favourite meals and get them delivered at your doorsetps in minutes</p>
+        <input type="submit" value="Order Now" style="color: #ea7211;">
+        </div>
+        <div>
+        <img src="main.jpeg" alt="Grilled chicken" width="300px" height="10px">
+    </div>
+    </div>
+        <div class="content"><h2> Our Popular Dishes </h2>
+        <div class="cards">
+
+            <div class="card">
+                <img src="sFood1.jpg" width="300px" height="300px">
+                <h2> SouthIndian Meals</h2>
+                <p> Rs.380</p>
+            </div>
+                 <div class="card">
+                <img src="dosa2.jpg" width="300px" height="300px">
+                <h2>  Masala Dosa</h2>
+                <p> Rs.150</p>
+                 </div>
+                 <div class="card">
+                <img src="chicken2.jpg" width="300px" height="300px">
+                <h2> Grilled Chicken</h2>
+                <p> Rs.480</p>
+                 </div>
+                 <div class="card">
+                <img src="dessert.jpg" width="300px" height="300px">
+                <h2> Red Velvet Dessert</h2>
+                <p> Rs.210</p>
+                 </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+        <ul class="ull" style="list-style: none; display: flex; justify-content: center;">
+            <li> About  
+                <p> We deliver delicious food at your doorstep</p></li>
+        
+            <li> Contact
+                <p> email-swiggy@gmail.com</p> </li>
+           
+            <li> Follow Us
+                <p> insta-swiggyfoods</p></li>
+        </ul>
+        </nav>
+    </footer>
+    </body>
+</html>
